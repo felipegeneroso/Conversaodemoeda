@@ -1,0 +1,20 @@
+* {  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #8a51fc;
+}
+.logo {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+main {
+    width: 375px;
+    background: #8a51fc;
+
+}
