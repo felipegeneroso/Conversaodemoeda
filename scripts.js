@@ -29,15 +29,22 @@ function concertValues() {
 
 }
 
-function changeCurrency(){
-   const currencyName = document.getElementById("currency-name")
+function changeCurrency() {
+    const currencyName = document.getElementById("currency-name")
+    const currencyImage = document.querySelector(".currency-img")
 
-   if(currencySelect.value == "dolar"){
-    currencyName.innerHTML = "Dolar Americano"
-   }
-   if (currencySelect.value == "euro"){
-    currencyName.innerHTML = "Euro"
-   }
+    if (currencySelect.value == "dolar") {
+        currencyName.innerHTML = "Dolar Americano"
+        currencyImage.src = "./assets/dolar.png"
+    }
+
+    if (currencySelect.value == "euro") {
+        currencyName.innerHTML = "Euro"
+        currencyImage.src = "./assets/euro.png"
+    }
+
+    concertValues()
+
 }
 
 currencySelect.addEventListener("change", changeCurrency)
